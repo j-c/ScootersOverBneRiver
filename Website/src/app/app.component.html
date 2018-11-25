@@ -1,0 +1,29 @@
+<div class="app-component">
+  <h1 class="title">How many eScooters have been spotted (via GPS) over the Brisbane River?</h1>
+  <div *ngIf="!scooterStats">
+    <h1>Hang on,I need some time to count them.<span class="loading-1">.</span><span class="loading-2">.</span></h1>
+  </div>
+  <div *ngIf="scooterStats">
+    <div class="scooter-count">
+      {{ scooterStats.count }}
+    </div>
+    <div class="trailing-content">
+      <p>
+        ...since {{ scooterStats.earliest | date:'d MMMM yyyy' }}.
+        The last eScooter was observed approximately {{ scooterStats.latest | timeAgo }}.
+      </p>
+    </div>
+  </div>
+  <div class="trailing-content">
+    <hr />
+    <p>No, this does not necessarilly mean that some miscreant has dumped them into the river. Just that their GPS coordinates place them over the river (e.g: on a pontoon or CityCat).</p>
+    <p class="disclaimer">
+        <span>⚠️</span><em><strong>Obligatory disclaimer:</strong> This page is not intended to be anything more than amusement. Hell, its accuracy would be debatable at best. In case you didn't get it the first time, this is all a joke!</em>
+    </p>
+    <p>
+      <u>Acknowledgements</u><br />
+      <a href="https://developer.multicycles.org">Multicycles</a> - For use of their shared vehicles API.<br />
+      <a href="https://qldglobe.information.qld.gov.au/">Queensland Globe</a> - This page uses location information derived from Queensland Globe.
+    </p>
+  </div>
+</div>

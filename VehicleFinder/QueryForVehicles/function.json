@@ -1,0 +1,11 @@
+{
+  "scriptFile": "QueryForVehicles.js",
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "location",
+      "type": "activityTrigger",
+      "direction": "in"
+    }
+  ]
+}

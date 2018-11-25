@@ -1,0 +1,81 @@
+// CONFIG: START
+$heading-font: 'Merriweather', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$body-font: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+// CONFIG: END
+
+.app-component {
+    text-align: center;
+}
+
+.title {
+    font-family: $body-font;
+}
+
+.scooter-count {
+    font-family: $heading-font;
+    font-size: 32vmin;
+    font-weight: bold;
+}
+
+.trailing-content {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.disclaimer {
+    span {
+        font-size: 25px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 8px;
+    padding-left: 30px + (8px * 2);
+    background: rgba(0, 0, 0, 0.03);
+    text-align: left
+}
+
+$loader-fade-duration: 3s;
+.loading-1 {
+    animation: loaderfade1 $loader-fade-duration ease-in-out 0s infinite;
+}
+.loading-2 {
+    animation: loaderfade2 $loader-fade-duration ease-in-out 0s infinite;
+}
+@keyframes loaderfade1 {
+    0% {
+        opacity: 0;
+    }
+    16% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1.0;
+    }
+    83% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes loaderfade2 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 1.0;
+    }
+    83% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "scootersinthebneriver",
+  "version": "0.0.1",
+  "description": "Azure Function to query for seen eScooters.",
+  "author": "j-c",
+  "license": "ISC",
+  "dependencies": {
+    "azure-storage": "^2.10.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  }
+}

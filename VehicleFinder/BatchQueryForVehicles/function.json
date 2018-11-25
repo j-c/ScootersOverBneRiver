@@ -1,0 +1,11 @@
+{
+  "scriptFile": "BatchQueryForVehicles.js",
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "context",
+      "type": "orchestrationTrigger",
+      "direction": "in"
+    }
+  ]
+}

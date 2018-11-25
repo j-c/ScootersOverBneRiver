@@ -1,0 +1,13 @@
+{
+  "scriptFile": "EvaluateLocationQueue.js",
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "evaluatelocation-vehiclelist",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}
