@@ -54,8 +54,7 @@ function tallyStats (vehicles, runningStats) {
     vehicles.map(e => e.queriedOn._).forEach(e => {
         if (e > latest) {
             latest = e;
-        }
-        if (e < earliest) {
+        } else if (e < earliest) {
             earliest = e;
         }
     });
