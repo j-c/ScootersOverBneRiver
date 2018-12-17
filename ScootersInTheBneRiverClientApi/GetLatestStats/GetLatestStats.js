@@ -29,7 +29,7 @@ module.exports = function (context /*, req */) {
         } else {
             latestStats = tallyStats(result.entries, latestStats);
             if (result.continuationToken) {
-                tableService.queryEntities(tableName, result.continuationToken, null, queryCallback);
+                tableService.queryEntities(tableName, query, result.continuationToken, queryCallback);
             } else {
                 context.res = {
                     headers: responseHeaders,
