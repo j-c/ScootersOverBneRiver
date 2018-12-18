@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "[azure_storage_connection_string]",
+    "AZURE_STORAGE_CONNECTION_STRING": "[azure_storage_connection_string]",
+    "MulticycleApiKey": "[multicycle_api_key]"
+  }
+}

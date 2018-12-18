@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "DrownedVehiclesStorageHost": "https://[azure_storage_Account].table.core.windows.net/",
+    "DrownedVehiclesStorageSas": "[azure_storage_sas_token]"
+  }
+}

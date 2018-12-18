@@ -1,6 +1,9 @@
 # ScootersOverBneRiver
 Source for the various components of http://scootersbneriver.coolshitindustries.com
 
+# Config
+To run Azure Functions locally, create `local.settings.json` in both ScootersOverBneRiver and VehicleFinder. Refer to `_SAMPLE.local.settings.json` in each directory for an example.
+
 # Brief architectural overview
 Durable azure functions are used to query scooter data from Multicycles.org and placed in an Azure storage queue for further processing.
 
