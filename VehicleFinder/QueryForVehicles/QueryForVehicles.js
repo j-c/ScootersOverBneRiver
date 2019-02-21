@@ -18,7 +18,9 @@ module.exports = async function (context, location) {
                 lat
                 lng
                 ... on Lime {
-                    status
+                    limeFields {
+                        status
+                    }
                 }
                 provider {
                     slug,
@@ -33,7 +35,7 @@ module.exports = async function (context, location) {
 
     const queryTime = Date.now();
     const data = await request(endpoint, query, variables);
-    
+
     // Save query time as API doesn't tell is when the vehicle was seen.
     data.vehicles.forEach(v => {
         v.queriedOn = queryTime;
