@@ -20,13 +20,15 @@ module.exports = async function (context, message) {
             context.log.error(`Error creating table: ${error}`);
         }
     });
-    
+
     /*
     {
 	"id": "ODCP5JQYB36DP",
 	"lat": -27.466737,
 	"lng": 153.024991,
-	"status": "locked",
+	"limeFields": {
+        "status": "locked"
+    }
 	"provider": {
 		"slug": "lime"
 	},
@@ -73,7 +75,7 @@ module.exports = async function (context, message) {
             vehicleId: entGen.String(vehicle.id),
             lat: entGen.Double(vehicle.lat),
             lng: entGen.Double(vehicle.lng),
-            status: entGen.String(vehicle.status),
+            status: entGen.String(vehicle.limeFields.status),
             providerSlug: entGen.String(vehicle.provider.slug),
             queriedOn: entGen.DateTime(new Date(vehicle.queriedOn)),
             isDrowned: entGen.Boolean(vehicleIsInRiver)
